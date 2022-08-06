@@ -5,9 +5,8 @@ on: push
 jobs:
   Agent_Creation_Job1:
       name: Agent Creation Job
-      run-on: ubuntu-latest:
-      
-        steps:
-        -run: echo "This is running inside a ${{runner.os}} server in Github"
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "This is running inside a ${{ runner.os }} server in Github"
   
-
+ 
